@@ -19,7 +19,7 @@ local function tempTeleportAndBounce()
     local upTween = TweenService:Create(
         hrp,
         TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-        {CFrame = CFrame.new(SHOTGUN_POS + Vector3.new(0,3,0))}
+        {CFrame = CFrame.new(M9_POS + Vector3.new(0,3,0))}
     )
     upTween:Play()
     upTween.Completed:Wait()
@@ -27,7 +27,7 @@ local function tempTeleportAndBounce()
     local downTween = TweenService:Create(
         hrp,
         TweenInfo.new(0.1, Enum.EasingStyle.Quad, Enum.EasingDirection.In),
-        {CFrame = CFrame.new(SHOTGUN_POS)}
+        {CFrame = CFrame.new(M9_POS)}
     )
     downTween:Play()
     downTween.Completed:Wait()
